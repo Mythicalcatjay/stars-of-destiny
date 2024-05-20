@@ -1,0 +1,312 @@
+/* This is the page that controls the style of your website. Html pages have all the content, this makes the content look the way you want. */
+
+/* THEMES */
+
+.starclan {
+  --color1:#20d6ca;
+  --color2:#3adacf;
+  --color3:#55ded5;
+  --color4:#8be7e0;
+  --color5:#c1efeb;
+  --bg: url("https://mythicalcatjay.neocities.org/farts_of_destiny/clans/starclan/IMG_3349.jpg");
+  --bullet: "✦";
+}
+
+.ivyclan {
+  --color1:#008542;
+  --color2:#13885E;
+  --color3:#268A79;
+  --color4:#398C95;
+  --color5:#0F6B49; 
+  --bg: url("https://mythicalcatjay.neocities.org/farts_of_destiny/clans/ivyclan/image_landscape.png");
+  --bullet: "𖠺";
+}
+
+.wildclan {
+  --color1:#4C8EB0;
+  --color2:#5178A5;
+  --color3:#556299;
+  --color4:#594C8D;
+  --color5:#436489; 
+  --bg: url("https://mythicalcatjay.neocities.org/farts_of_destiny/clans/wildclan/aesthetic-beach-laptop-5qxoig5cee6fjzay.png");
+  --bullet:"𓆝";
+}
+
+.rushclan {
+  --color1:#5D3681;
+  --color2:#7F4485;
+  --color3:#A05188;
+  --color4:#C15F8B;
+  --color5:#66376C; 
+  --bg: url("https://mythicalcatjay.neocities.org/farts_of_destiny/clans/rushclan/1584645073534.png");
+  --bullet: "𖣂";
+}
+
+.jaggedclan {
+  --color1:#E26C8E;
+  --color2:#DD7A7A;
+  --color3:#D78865;
+  --color4:#D29650;
+  --color5:#D55D5D; 
+  --bg: url("https://mythicalcatjay.neocities.org/farts_of_destiny/clans/jaggedclan/32458642843_f343d35f4c_b.png");
+  --bullet: "𒄬";
+}
+
+.outsiders {
+  --color1:#CCA43B;
+  --color2:#D1AC4D;
+  --color3:#D5B45D;
+  --color4:#D9BB6C;
+  --color5:#C39A32;
+  --bg: url("https://mythicalcatjay.neocities.org/farts_of_destiny/clans/outsiders/IMG_3359.jpg");
+  --bullet: "▸";
+}
+
+.darkforest {
+  --color1:#DF2935;
+  --color2:#C52530;
+  --color3:#AA212A;
+  --color4:#74181F;
+  --color5:#3E1014;
+  --bg: url("https://mythicalcatjay.neocities.org/farts_of_destiny/clans/dark%20forest/IMG_0578.jpg");
+  --bullet: "✘";
+}
+
+/* For a custom font, this is entirely optional. I use Comic Geek Regular since I love the font, but you chose the one that makes you happy */
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url('https://mythicalcatjay.neocities.org/action_figure_motel/css/EBGaramond-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: "Grant Rustic Opti";
+  src: url('https://mythicalcatjay.neocities.org/action_figure_motel/css/GrantRusticOpti.otf');
+}
+
+/* Body controls the background, cursor, font, and basic text color. */
+
+body {
+  background-image: var(--bg);
+  scrollbar-color: var(--color5) var(--color1);
+  color: black;
+  cursor: url('data:image/x-icon;base64,AAACAAEAICAAAA0ABQCoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkZGQE2NjZKNjY2SjY2Nko2NjZKNjY2SjY2Nko2NjZKNjY2SgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2NjaZNjY2mTY2Npk2NjaZNjY2mTY2Npk2NjaZNjY2mTY2Npk2NjaZNjY2mTY2NpkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb//////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv//////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv//////LCwsDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb//////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2//////8LCwsNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHBwcC/////zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb//////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv//////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb//////xwcHAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv//////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb//////wUFBQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2/zY2Nv//////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////NjY2/zY2Nv82Njb/oo/9/6KP/f+ij/3/NjY2/zY2Nv82Njb/NjY2/zY2Nv82Njb/NjY2//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////zY2Nv82Njb/NjY2/6KP/f+ij/3/oo/9/6KP/f+ij/3/opD9/zY2Nv82Njb/NjY2/zY2Nv//////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////oo/9/zY2Nv82Njb/oo/9/6KP/f+ij/3/oo/9/6KP/f+ikP3/NjY2/zY2Nv82Njb/NjY2//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////+ij/3/NjY2/zY2Nv+ij/3/oo/9/6KP/f+ij/3/oo/9/6KQ/f82Njb/NjY2/zY2Nv82Njb//////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////+ij/3/NjY2/6KP/f+ij/3/oo/9/6KP/f+ij/3/NjY2/zY2Nv+ij/3/NjY2//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////zY2Nv82Njb/NjY2/6KP/f+ij/3/oo/9/zY2Nv82Njb/o5H9/6KP/f///////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////zY2Nv//////NjY2/zY2Nv82Njb//////zY2Nv+ij/3/NjY2//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////zY2Nv82Njb/oo/9/zY2Nv//////NjY2/zY2Nv//////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////NjY2/6KP/f+ij/3/oo/9/////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////82Njb/oo/9/6KP/f+ij/3/NjY2//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////82Njb/oo/9/zY2Nv82Njb//////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////zY2Nv82Njb/NjY2//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////////////4AH//8AB///AAf//gAH//4AD//+AA///AAP//wAH//8AB//+AAf//gAP//wAD//4AB//8AAf//AAH//gAD//4AA//+AAP//wAH//8AB///gA///8Af///AP///wH///+B////g////8f////////////8='), auto;
+}
+
+p, ul, li {
+  font-family: "EB Garamond", "EBGaramond", "Eb Garamond", Serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Grant Rustic Opti", "GrantRusticOpti", "Grant Rustic", Serif;
+}
+/* Make Your Links Pretty */
+
+a {
+ color: black;  
+ text-decoration: none;
+}
+
+/* Makes elements nice and flush */
+
+* { margin:0; padding:0; color: inherit;}
+
+/* Parts of the webpage */
+
+.header {
+  background-color: var(--color1);
+  text-align: center;
+  font-size: 2rem;
+  padding: 1px;
+}
+
+.header p {
+ text-indent: 25px; 
+}
+
+.nav {
+  overflow: hidden;
+  background-color: var(--color2);
+  text-align: center;
+}
+
+.nav p {
+ text-indent: 25px; 
+}
+
+.middle {
+  margin: auto;
+  width: 60%;
+  height: 78vh;
+  overflow: scroll;
+  background-color: var(--color3);
+  padding: 0.5em;
+}
+
+.middle p {
+ text-indent: 25px; 
+}
+
+.footer {
+  background-color: var(--color4);
+  text-align: center;
+  padding: 0.2em;
+}
+
+.footer p {
+ text-indent: 25px; 
+}
+
+/* Nav Shit */
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: var(--color5); 
+}
+
+/* Dropdown */
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  font-family: "EB Garamond", "EBGaramond", "Eb Garamond", Serif;
+}
+.dropdown a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.dropdown .dropbtn { 
+  font-family: "EB Garamond", "EBGaramond", "Eb Garamond", Serif;
+  font-size: 1rem;
+  padding: 8px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--color5);
+}
+
+.dropdown-content {
+  font-family: "EB Garamond", "EBGaramond", "Eb Garamond", Serif;
+  display: none;
+  position: absolute;
+  background-color: var(--color2);
+  min-width: 7vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--color5);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Content Goodies */
+
+.middle li {
+    margin-left: 25px;
+    list-style-type: var(--bullet);
+ }
+
+.middle button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-family: "EB Garamond", "EBGaramond", "Eb Garamond", Serif;
+  color: black;
+  border: 0rem;
+  background-color: var(--color2);
+  list-style-type: var(--bullet);
+}
+
+.middle button:hover {
+  background-color: var(--color5);
+}
+
+.middle p, h1, h2, h3, h4, h5, h6 {
+  padding: 0rem 0rem 0.5rem 0rem;
+}
+
+/* Allegiences */
+
+.allegiences {
+  margin: auto;
+  width: 60%;
+  height: 78vh;
+  overflow: scroll;
+  background-color: var(--color3);
+  padding: 0.5em;
+  text-indent:0px;
+}
+
+.allegiences p, h1, h2, h3, h4, h5, h6 {
+  padding: 0rem 0rem 0.5rem 0rem;
+}
+
+.allegiences li {
+  margin-left: 8.5em;
+  padding: 0.5rem 0rem;
+  list-style-type: none;
+}
+
+/* Allow the stuff to change with theme */
+
+.stuff {
+  padding: 0rem 0.5rem;
+  text-decoration: none;
+  float: left;
+}
+
+.stuff::after {
+  content: var(--bullet);
+}
+
+/* Header */
+
+.header h1 {
+ padding: 0rem; 
+}
+
+/* Responsive Stuff */
+@media screen and (max-width: 600px) {
+  .middle {
+    width: 100%;
+  }
+}
